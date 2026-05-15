@@ -1,0 +1,32 @@
+{
+    "source": "/workspaces/MLops_Renovacion_Credito/Credito/data/Dataset Renovacion_prestamo.csv",
+    "filename": "Dataset Renovacion_prestamo.csv",
+    "rows": 87556,
+    "columns": 22,
+    "column_names": [
+        "MES",
+        "CLIENTE",
+        "LINEA_RENOVADO",
+        "PLAZO_RENOVADO",
+        "FLAG_VENTA",
+        "USO_LINEA_TOTAL_TC_T2",
+        "USO_TRIM_LINEA_BBVA",
+        "NR_ENTIDADES_TOTAL_T2",
+        "DIFF_NRO_ENTIDA_TOTALES_T2_T12",
+        "SDO_CONSUMO_T2",
+        "RESENCIA_OFERTA_PLD_RENOVADO",
+        "Ahorro_Sldo_Bco_T1",
+        "PConsumo_Sldo_Bco_T1",
+        "SDO_BCO_tot_sm_pasivo_Bco_6M",
+        "EDAD",
+        "SEXO",
+        "EST_CIVIL",
+        "ANTIGUEDAD_MES",
+        "REGION",
+        "FLAG_LIMA_PROVINCIA",
+        "SUELDO_ESTIMADO",
+        "CUBRIR_DEUDA_CONSUMO_SF_RENOVA_PLD"
+    ],
+    "file_hash_md5": "3beef844ebc3d6caa3e0facfcbc14689",
+    "timestamp_utc": "2026-05-15T16:23:59.950714+00:00"
+}
