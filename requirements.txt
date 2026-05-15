@@ -1,0 +1,27 @@
+# Librerias necesarias para el procesamiento del caso de Renovacion de Credito
+
+# Manejo de datos
+numpy>=1.23
+pandas>=1.5
+scipy>=1.9
+
+# Visualización y análisis exploratorio
+matplotlib>=3.6
+seaborn>=0.12
+missingno>=0.5.2
+
+# Machine Learning
+scikit-learn>=1.2
+imbalanced-learn>=0.10
+xgboost>=1.7
+
+# Tracking y registro de modelos
+mlflow>=2.0
+
+# Exportación de archivos Excel
+openpyxl>=3.1
+
+# CI/CD — testing y linting
+pytest>=7.0
+pytest-cov>=4.0
+flake8>=6.0
