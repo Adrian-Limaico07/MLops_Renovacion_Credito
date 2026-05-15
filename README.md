@@ -2,8 +2,9 @@
 Proyecto de Renovación de Crédito aplicando MLops.
 
 # **Autores:**
-# ADRIAN ENRIQUE LIMAICO JARA
-# OMAR ANTONIO PINOS GUILLEN
+
+## ADRIAN ENRIQUE LIMAICO JARA
+## OMAR ANTONIO PINOS GUILLEN
 
 
 # **DESCRIPCIÓN DEL CASO**
