@@ -1,0 +1,48 @@
+{
+    "dataset_path": "/workspaces/MLops_Renovacion_Credito/Credito/data/Dataset Renovacion_prestamo.csv",
+    "rows": 87556,
+    "columns": 22,
+    "column_names": [
+        "MES",
+        "CLIENTE",
+        "Linea_Renovado",
+        "Plazo_Renovado",
+        "FLAG_VENTA",
+        "Uso_Linea",
+        "Uso_TrimLinea",
+        "Nro_Entidades",
+        "Dif_Entidades",
+        "Saldo_Consumo",
+        "Meses_oferta",
+        "Ahorro",
+        "Prestamo_vigente",
+        "Promed_6Mdeuda",
+        "EDAD",
+        "SEXO",
+        "EST_CIVIL",
+        "ANTIGUEDAD_MES",
+        "REGION",
+        "Flag_LimProv",
+        "SUELDO_ESTIMADO",
+        "Deuda_Cubierta%"
+    ],
+    "duplicated_rows": 0,
+    "columns_with_nulls": 10,
+    "total_null_values": 57485,
+    "target": "FLAG_VENTA",
+    "target_distribution": {
+        "0": 84064,
+        "1": 3492
+    },
+    "mes_distribution": {
+        "201504": 11191,
+        "201503": 10853,
+        "201505": 10602,
+        "201502": 9532,
+        "201501": 9313,
+        "201509": 9215,
+        "201506": 9020,
+        "201508": 9002,
+        "201507": 8828
+    }
+}
