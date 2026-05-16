@@ -1,0 +1,64 @@
+artifact_path: file:///workspaces/MLops_Renovacion_Credito/Credito/mlruns/171489702180522810/models/m-40a63bce658c4acf95613eaf1184edc6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-40a63bce658c4acf95613eaf1184edc6
+model_size_bytes: 15372197
+model_uuid: m-40a63bce658c4acf95613eaf1184edc6
+prompts: null
+run_id: 0741b71c1c1c4fd5b09e4628ef32e8f2
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "MES", "required": true}, {"type": "long", "name":
+    "Plazo_Renovado", "required": true}, {"type": "long", "name": "Nro_Entidades",
+    "required": true}, {"type": "long", "name": "Dif_Entidades", "required": true},
+    {"type": "double", "name": "Meses_oferta", "required": true}, {"type": "double",
+    "name": "EDAD", "required": true}, {"type": "long", "name": "Flag_LimProv", "required":
+    true}, {"type": "double", "name": "Uso_Linea_LOG", "required": true}, {"type":
+    "double", "name": "Uso_TrimLinea_LOG", "required": true}, {"type": "double", "name":
+    "Saldo_Consumo_LOG", "required": true}, {"type": "double", "name": "SUELDO_ESTIMADO_LOG",
+    "required": true}, {"type": "double", "name": "ANTIGUEDAD_MES_LOG", "required":
+    true}, {"type": "double", "name": "Linea_Renovado_LOG", "required": true}, {"type":
+    "double", "name": "Ahorro_LOG", "required": true}, {"type": "double", "name":
+    "Prestamo_vigente_LOG", "required": true}, {"type": "double", "name": "Promed_6Mdeuda_LOG",
+    "required": true}, {"type": "double", "name": "Deuda_Cubierta%_LOG", "required":
+    true}, {"type": "long", "name": "REGION_CALLAO", "required": true}, {"type": "long",
+    "name": "REGION_CENTRO", "required": true}, {"type": "long", "name": "REGION_LIMA
+    BALNEARIO", "required": true}, {"type": "long", "name": "REGION_LIMA CENTRO",
+    "required": true}, {"type": "long", "name": "REGION_LIMA ESTE", "required": true},
+    {"type": "long", "name": "REGION_LIMA MODERNA", "required": true}, {"type": "long",
+    "name": "REGION_LIMA NORTE", "required": true}, {"type": "long", "name": "REGION_LIMA
+    PROVINCIA", "required": true}, {"type": "long", "name": "REGION_LIMA SUR", "required":
+    true}, {"type": "long", "name": "REGION_NORTE", "required": true}, {"type": "long",
+    "name": "REGION_OESTE", "required": true}, {"type": "long", "name": "REGION_ORIENTE",
+    "required": true}, {"type": "long", "name": "REGION_SIERRA CENTRAL", "required":
+    true}, {"type": "long", "name": "REGION_SUR", "required": true}, {"type": "long",
+    "name": "SEXO_F", "required": true}, {"type": "long", "name": "SEXO_M", "required":
+    true}, {"type": "long", "name": "EST_CIVIL_C", "required": true}, {"type": "long",
+    "name": "EST_CIVIL_D", "required": true}, {"type": "long", "name": "EST_CIVIL_S",
+    "required": true}, {"type": "long", "name": "EST_CIVIL_U", "required": true},
+    {"type": "long", "name": "EST_CIVIL_V", "required": true}, {"type": "long", "name":
+    "EST_CIVIL_X", "required": true}, {"type": "long", "name": "EST_CIVIL_Y", "required":
+    true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-05-16 23:23:45.293564'

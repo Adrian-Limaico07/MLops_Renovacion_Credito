@@ -1,0 +1,16 @@
+creation_timestamp: 1778973830730
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1778973830730
+model_id: m-40a63bce658c4acf95613eaf1184edc6
+name: renovacion_credito_model
+run_id: 0741b71c1c1c4fd5b09e4628ef32e8f2
+run_link: null
+source: models:/m-40a63bce658c4acf95613eaf1184edc6
+status: READY
+status_message: null
+storage_location: file:///workspaces/MLops_Renovacion_Credito/Credito/mlruns/171489702180522810/models/m-40a63bce658c4acf95613eaf1184edc6/artifacts
+user_id: null
+version: 2
+workspace: default

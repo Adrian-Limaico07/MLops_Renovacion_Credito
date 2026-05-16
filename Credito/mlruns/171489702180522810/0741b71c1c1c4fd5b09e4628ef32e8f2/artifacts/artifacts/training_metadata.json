@@ -1,0 +1,49 @@
+{
+    "dataset_path": "/workspaces/MLops_Renovacion_Credito/Credito/data/Dataset Renovacion_prestamo.csv",
+    "target": "FLAG_VENTA",
+    "rows": 87556,
+    "columns": 41,
+    "n_features": 40,
+    "train_rows": 61289,
+    "test_rows": 26267,
+    "class_distribution_total": {
+        "0": 84064,
+        "1": 3492
+    },
+    "class_distribution_train": {
+        "0": 58845,
+        "1": 2444
+    },
+    "class_distribution_test": {
+        "0": 25219,
+        "1": 1048
+    },
+    "models_trained": [
+        "decision_tree",
+        "random_forest"
+    ],
+    "results_by_model": {
+        "decision_tree": {
+            "best_cv_score": 0.5878406210361066,
+            "best_params": {
+                "model__criterion": "entropy",
+                "model__max_depth": 6,
+                "model__min_samples_split": 2
+            }
+        },
+        "random_forest": {
+            "best_cv_score": 0.6340888633531518,
+            "best_params": {
+                "model__max_depth": 10,
+                "model__min_samples_split": 5,
+                "model__n_estimators": 200
+            }
+        }
+    },
+    "best_model": "random_forest",
+    "best_params": {
+        "model__max_depth": 10,
+        "model__min_samples_split": 5,
+        "model__n_estimators": 200
+    }
+}
