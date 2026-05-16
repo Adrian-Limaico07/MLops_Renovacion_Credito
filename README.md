@@ -50,11 +50,6 @@ renovacion-credito-mlops/
 │   ├── register_model.py                    ← Registro del modelo en MLflow
 │   └── validate_model.py                    ← Quality gate de métricas
 │
-├── notebooks/
-│   ├── eda_renovacion_credito.ipynb         ← Análisis exploratorio
-│   ├── preparacion_variables.ipynb          ← Limpieza, nulos, logs, one-hot, clustering
-│   ├── modelado_balanceo.ipynb              ← Árbol, XGBoost, undersampling, SMOTE
-│   └── evaluacion_modelos.ipynb             ← Comparación de modelos y métricas
 │
 ├── tests/
 │   ├── __init__.py

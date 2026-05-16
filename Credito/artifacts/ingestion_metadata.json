@@ -27,10 +27,11 @@
         "SUELDO_ESTIMADO",
         "CUBRIR_DEUDA_CONSUMO_SF_RENOVA_PLD"
     ],
-    "file_hash_md5": "3beef844ebc3d6caa3e0facfcbc14689",
-    "timestamp_utc": "2026-05-15T17:45:52.051878+00:00",
+    "target": "FLAG_VENTA",
     "target_distribution": {
         "0": 84064,
         "1": 3492
-    }
+    },
+    "file_hash_md5": "3beef844ebc3d6caa3e0facfcbc14689",
+    "timestamp_utc": "2026-05-16T21:17:41.258546+00:00"
 }

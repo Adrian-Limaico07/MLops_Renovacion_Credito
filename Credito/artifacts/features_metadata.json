@@ -1,0 +1,219 @@
+{
+    "dataset_path": "/workspaces/MLops_Renovacion_Credito/Credito/data/Dataset Renovacion_prestamo.csv",
+    "features_data_path": "/workspaces/MLops_Renovacion_Credito/Credito/artifacts/df_features.csv",
+    "target": "FLAG_VENTA",
+    "rows": 87556,
+    "columns": 41,
+    "column_names": [
+        "MES",
+        "Plazo_Renovado",
+        "FLAG_VENTA",
+        "Nro_Entidades",
+        "Dif_Entidades",
+        "Meses_oferta",
+        "EDAD",
+        "Flag_LimProv",
+        "Uso_Linea_LOG",
+        "Uso_TrimLinea_LOG",
+        "Saldo_Consumo_LOG",
+        "SUELDO_ESTIMADO_LOG",
+        "ANTIGUEDAD_MES_LOG",
+        "Linea_Renovado_LOG",
+        "Ahorro_LOG",
+        "Prestamo_vigente_LOG",
+        "Promed_6Mdeuda_LOG",
+        "Deuda_Cubierta%_LOG",
+        "REGION_CALLAO",
+        "REGION_CENTRO",
+        "REGION_LIMA BALNEARIO",
+        "REGION_LIMA CENTRO",
+        "REGION_LIMA ESTE",
+        "REGION_LIMA MODERNA",
+        "REGION_LIMA NORTE",
+        "REGION_LIMA PROVINCIA",
+        "REGION_LIMA SUR",
+        "REGION_NORTE",
+        "REGION_OESTE",
+        "REGION_ORIENTE",
+        "REGION_SIERRA CENTRAL",
+        "REGION_SUR",
+        "SEXO_F",
+        "SEXO_M",
+        "EST_CIVIL_C",
+        "EST_CIVIL_D",
+        "EST_CIVIL_S",
+        "EST_CIVIL_U",
+        "EST_CIVIL_V",
+        "EST_CIVIL_X",
+        "EST_CIVIL_Y"
+    ],
+    "columnas_renombradas": {
+        "LINEA_RENOVADO": "Linea_Renovado",
+        "PLAZO_RENOVADO": "Plazo_Renovado",
+        "USO_LINEA_TOTAL_TC_T2": "Uso_Linea",
+        "USO_TRIM_LINEA_BBVA": "Uso_TrimLinea",
+        "NR_ENTIDADES_TOTAL_T2": "Nro_Entidades",
+        "DIFF_NRO_ENTIDA_TOTALES_T2_T12": "Dif_Entidades",
+        "SDO_CONSUMO_T2": "Saldo_Consumo",
+        "RESENCIA_OFERTA_PLD_RENOVADO": "Meses_oferta",
+        "Ahorro_Sldo_Bco_T1": "Ahorro",
+        "PConsumo_Sldo_Bco_T1": "Prestamo_vigente",
+        "SDO_BCO_tot_sm_pasivo_Bco_6M": "Promed_6Mdeuda",
+        "FLAG_LIMA_PROVINCIA": "Flag_LimProv",
+        "CUBRIR_DEUDA_CONSUMO_SF_RENOVA_PLD": "Deuda_Cubierta%"
+    },
+    "columnas_capping_cero": [
+        "Ahorro",
+        "Prestamo_vigente",
+        "Promed_6Mdeuda"
+    ],
+    "variables_log": [
+        "Uso_Linea",
+        "Uso_TrimLinea",
+        "Saldo_Consumo",
+        "SUELDO_ESTIMADO",
+        "ANTIGUEDAD_MES",
+        "Linea_Renovado",
+        "Ahorro",
+        "Prestamo_vigente",
+        "Promed_6Mdeuda",
+        "Deuda_Cubierta%"
+    ],
+    "variables_imputacion_aleatoria": [
+        "Uso_TrimLinea_LOG",
+        "Uso_Linea_LOG",
+        "Meses_oferta"
+    ],
+    "variables_imputacion_mediana": [
+        "Saldo_Consumo_LOG",
+        "SUELDO_ESTIMADO_LOG",
+        "ANTIGUEDAD_MES_LOG",
+        "EDAD"
+    ],
+    "variables_categoricas": [
+        "REGION",
+        "SEXO",
+        "EST_CIVIL"
+    ],
+    "niveles_categoricos": {
+        "REGION": [
+            "CALLAO",
+            "CENTRO",
+            "LIMA BALNEARIO",
+            "LIMA CENTRO",
+            "LIMA ESTE",
+            "LIMA MODERNA",
+            "LIMA NORTE",
+            "LIMA PROVINCIA",
+            "LIMA SUR",
+            "NORTE",
+            "OESTE",
+            "ORIENTE",
+            "SIERRA CENTRAL",
+            "SUR"
+        ],
+        "SEXO": [
+            "F",
+            "M"
+        ],
+        "EST_CIVIL": [
+            "C",
+            "D",
+            "S",
+            "U",
+            "V",
+            "X",
+            "Y"
+        ]
+    },
+    "columnas_excluir_modelo": [
+        "CLIENTE",
+        "Uso_Linea",
+        "Uso_TrimLinea",
+        "Saldo_Consumo",
+        "SUELDO_ESTIMADO",
+        "ANTIGUEDAD_MES",
+        "Linea_Renovado",
+        "Ahorro",
+        "Prestamo_vigente",
+        "Promed_6Mdeuda",
+        "Deuda_Cubierta%"
+    ],
+    "imputacion": {
+        "random_uniform": [
+            {
+                "columna": "Uso_TrimLinea_LOG",
+                "metodo": "random_uniform_mean_std",
+                "nulos_imputados": 19192,
+                "media": 0.07870700457758947,
+                "std": 0.1570558247635814,
+                "lower_bound": 0.0,
+                "upper_bound": 0.23576282934117088
+            },
+            {
+                "columna": "Uso_Linea_LOG",
+                "metodo": "random_uniform_mean_std",
+                "nulos_imputados": 19192,
+                "media": 0.10861675900674872,
+                "std": 0.15126836536434818,
+                "lower_bound": 0.0,
+                "upper_bound": 0.2598851243710969
+            },
+            {
+                "columna": "Meses_oferta",
+                "metodo": "random_uniform_mean_std",
+                "nulos_imputados": 13856,
+                "media": 14.704464043419268,
+                "std": 5.929295170542251,
+                "lower_bound": 8.775168872877018,
+                "upper_bound": 20.63375921396152
+            }
+        ],
+        "median": [
+            {
+                "columna": "Saldo_Consumo_LOG",
+                "metodo": "median",
+                "nulos_imputados": 5186,
+                "valor_imputacion": 9.032307007698005
+            },
+            {
+                "columna": "SUELDO_ESTIMADO_LOG",
+                "metodo": "median",
+                "nulos_imputados": 37,
+                "valor_imputacion": 8.064359707917784
+            },
+            {
+                "columna": "ANTIGUEDAD_MES_LOG",
+                "metodo": "median",
+                "nulos_imputados": 1,
+                "valor_imputacion": 4.672828834461906
+            },
+            {
+                "columna": "EDAD",
+                "metodo": "median",
+                "nulos_imputados": 1,
+                "valor_imputacion": 43.0
+            }
+        ],
+        "mode": [
+            {
+                "columna": "REGION",
+                "metodo": "mode",
+                "nulos_imputados": 18,
+                "valor_imputacion": "LIMA MODERNA"
+            },
+            {
+                "columna": "SEXO",
+                "metodo": "mode",
+                "nulos_imputados": 1,
+                "valor_imputacion": "M"
+            },
+            {
+                "columna": "EST_CIVIL",
+                "metodo": "mode",
+                "nulos_imputados": 1,
+                "valor_imputacion": "S"
+            }
+        ]
+    }
+}
