@@ -1,0 +1,8 @@
+artifact_location: file:///workspaces/MLops_Renovacion_Credito/Credito/mlruns/171489702180522810
+creation_time: 1778969717792
+experiment_id: '171489702180522810'
+last_update_time: 1778969717792
+lifecycle_stage: active
+name: renovacion_credito_mlops
+trace_location: null
+workspace: default

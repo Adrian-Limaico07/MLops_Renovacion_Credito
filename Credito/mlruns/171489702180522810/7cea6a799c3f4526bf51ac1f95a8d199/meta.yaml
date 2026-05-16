@@ -1,0 +1,14 @@
+artifact_uri: file:///workspaces/MLops_Renovacion_Credito/Credito/mlruns/171489702180522810/7cea6a799c3f4526bf51ac1f95a8d199/artifacts
+end_time: 1778969725015
+entry_point_name: ''
+experiment_id: '171489702180522810'
+lifecycle_stage: active
+run_id: 7cea6a799c3f4526bf51ac1f95a8d199
+run_name: registro_modelo_renovacion_credito
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778969719174
+status: 3
+tags: []
+user_id: codespace

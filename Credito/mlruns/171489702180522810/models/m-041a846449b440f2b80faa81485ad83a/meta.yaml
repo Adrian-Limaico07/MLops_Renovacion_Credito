@@ -1,0 +1,10 @@
+artifact_location: file:///workspaces/MLops_Renovacion_Credito/Credito/mlruns/171489702180522810/models/m-041a846449b440f2b80faa81485ad83a/artifacts
+creation_timestamp: 1778969719295
+experiment_id: '171489702180522810'
+last_updated_timestamp: 1778969724948
+model_id: m-041a846449b440f2b80faa81485ad83a
+model_type: null
+name: model
+source_run_id: 7cea6a799c3f4526bf51ac1f95a8d199
+status: 2
+status_message: null
