@@ -15,7 +15,6 @@ Este script:
 import json
 import logging
 import sys
-from pathlib import Path
 from typing import Any
 
 import joblib
@@ -293,7 +292,7 @@ def obtener_modelos_y_grids() -> dict[str, dict[str, Any]]:
                 objective="binary:logistic",
                 eval_metric="logloss",
                 random_state=RANDOM_STATE,
-                n_jobs=N_JOBS,
+                n_jobs=N_JOBS_MODEL,
                 tree_method="hist",
             ),
             "param_grid": {
@@ -351,16 +350,6 @@ def entrenar_gridsearch(
 ) -> GridSearchCV:
     """
     Entrena un modelo usando GridSearchCV.
-
-    Args:
-        model_name: Nombre del modelo.
-        estimator: Estimador base.
-        param_grid: Grilla de hiperparámetros.
-        X_train: Variables de entrenamiento.
-        y_train: Target de entrenamiento.
-
-    Returns:
-        GridSearchCV entrenado.
     """
     logger.info("=" * 70)
     logger.info("Entrenando modelo: %s", model_name)
@@ -375,15 +364,15 @@ def entrenar_gridsearch(
     )
 
     grid_search = GridSearchCV(
-    estimator=pipeline,
-    param_grid=param_grid,
-    scoring=SCORING,
-    refit=REFIT_METRIC,
-    cv=cv,
-    n_jobs=N_JOBS_GRID,
-    verbose=1,
-    return_train_score=True,
-)
+        estimator=pipeline,
+        param_grid=param_grid,
+        scoring=SCORING,
+        refit=REFIT_METRIC,
+        cv=cv,
+        n_jobs=N_JOBS_GRID,
+        verbose=1,
+        return_train_score=True,
+    )
 
     grid_search.fit(X_train, y_train)
 
